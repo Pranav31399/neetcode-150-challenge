@@ -1,4 +1,10 @@
 class Main {
+    public static void main(String[] args) {
+        Main main = new Main();
+        System.out.println(main.isAnagram("anagram", "nagaram")); // true
+        System.out.println(main.isAnagram("rat", "car")); // false
+    }
+    
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length())
             return false;
