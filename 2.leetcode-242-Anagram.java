@@ -1,11 +1,10 @@
 class Main {
     public static void main(String[] args) {
-        Main main = new Main();
-        System.out.println(main.isAnagram("anagram", "nagaram")); // true
-        System.out.println(main.isAnagram("rat", "car")); // false
+        System.out.println(isAnagram("anagram", "nagaram")); // true
+        System.out.println(isAnagram("rat", "car")); // false
     }
     
-    public boolean isAnagram(String s, String t) {
+    public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length())
             return false;
         int freqTable[] = new int[26];
